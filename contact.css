@@ -1,0 +1,179 @@
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*  */
+body {
+    background-color: #dce5c0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/* Style the top navbar */
+/* Top Navbar Styles */
+.top-navbar {
+    background-color: #c9c0d4 ;
+    color: rgb(52, 51, 51);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-icons i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.other-links button {
+    background-color: #ffc107;
+    color: #343a40;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.other-links button a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+/* Style login and signup button */
+#btn-login,
+#btn-signup {
+    background-color: #e4e6a9;
+    color: #161617;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#btn-login a,
+#btn-signup a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+/* font awesome icons */
+.fa-solid {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Hover buttons */
+.other-links button:hover,
+#btn-login:hover,
+#btn-signup:hover {
+    background-color: #c8d6e4;
+    color: white;
+}
+
+
+
+
+/* Style the main navbar */
+#navbar {
+    background-color: #343a40;
+    color: white;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Style contact section */
+#contact {
+    margin-top: 50px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+#messagebtn button {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#messagebtn button:hover {
+    background-color: #ffc107;
+    color: #343a40;
+}
+
+/* Style the footer */
+#footer {
+    margin-top: 50px;
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-top {
+    padding-bottom: 20px;
+}
+
+.footer-content h3 {
+    color: #ffc107;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: white !important;
+}
+
+.footer-links a:hover {
+    color: #ffc107 !important;
+}
+
+.socail-links i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Style scroll arrow */
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.arrow i {
+ 
+    color: white;
+    padding: 10px;
+    border-radius: 50% 50%;
+    cursor: pointer;
+}
+
+.arrow i:hover {
+
+    color: #343a40;
+}
+/*  */

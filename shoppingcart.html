@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      width: 100%;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #d6b914;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 100px;
+    }
+
+    #buttons{
+      color: rgb(4, 4, 4);
+      background-color: rgb(80, 237, 116);
+      margin-left: 210px;
+      font-size: 20px;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <form id="shopping-cart-form">
+    <label for="product-name">Product Name:</label>
+    <input type="text" id="product-name" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" required>
+
+    <label for="price">Price per Unit:</label>
+    <input type="number" id="price" step="0.01" required>
+
+    <button type="button" onclick="addToCart()">Add to Cart</button>
+    <a href="shop.html" onclick="addToCart2()">
+      <button type="button">Previous page</button>
+    </a>
+    <h2>Your Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+
+    <p>Total: $<span id="total">0.00</span></p>
+    <button type="button" id="buttons"
+     onclick="purchase()">Purchase</button>
+     <script>
+      function purchase() {
+        alert('Purchase successful! Check Your Mail/Message');
+      }
+    </script>
+  </form>
+
+  <script>
+    function addToCart() {
+      const productName = document.getElementById('product-name').value;
+      const quantity = parseInt(document.getElementById('quantity').value, 10);
+      const price = parseFloat(document.getElementById('price').value);
+
+      const cartItems = document.getElementById('cart-items');
+      const totalElement = document.getElementById('total');
+
+      const totalItemCost = quantity * price;
+
+      const li = document.createElement('li');
+      li.textContent = `${productName} - Quantity: ${quantity} - $${totalItemCost.toFixed(2)}`;
+      cartItems.appendChild(li);
+
+      const currentTotal = parseFloat(totalElement.textContent);
+      const newTotal = currentTotal + totalItemCost;
+
+      totalElement.textContent = newTotal.toFixed(2);
+
+      
+      document.getElementById('product-name').value = '';
+      document.getElementById('quantity').value = '';
+      document.getElementById('price').value = '';
+    }
+  </script>
+</body>
+</html>

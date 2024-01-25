@@ -1,0 +1,151 @@
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #7cb5ef;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* */
+.top-navbar {
+    background-color: #adafb1;
+    color: rgb(15, 14, 14);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-icons i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.other-links button {
+    background-color: #ffc107;
+    color: #343a40;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.other-links button a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+/* Navbar Styles */
+#navbar {
+    background-color: #0a2d50;
+    color: white;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* About Section  */
+#about {
+    margin-top: 50px;
+}
+
+#about h1 {
+    text-align: center;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-6 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.col-md-6 h4 {
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.col-md-6 h6 {
+    color: #343a40;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+#footer {
+    margin-top: 50px;
+    background-color:  #0a2d50;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-top {
+    padding-bottom: 20px;
+}
+
+.footer-content h3 {
+    color: #ffc107;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: white !important;
+}
+
+.footer-links a:hover {
+    color: #ffc107 !important;
+}
+
+.socail-links i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Scroll Arrow Styles */
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.arrow i {
+
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow i:hover {
+
+    color: #989c9f;
+}
+
+h4{
+    color: #0c0c0c !important;
+}
